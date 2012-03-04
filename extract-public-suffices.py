@@ -3,6 +3,7 @@
 import sys
 import socket
 import string
+import subprocess
 
 if (len(sys.argv) != 3):
   print """
@@ -18,12 +19,20 @@ for line in infh:
     if line.startswith("*") or line.startswith("/") or (not "." in line):
       continue
     else:
-      try:
-        result = socket.gethostbyname(line)
-      except Exception, e:
-        outfh.write(line)
-        continue
-      outfh.write("// " + line + " has A record.")
+      if line.startswith("!"):
+        line = line.lstrip("!")
+      line = line.strip()
+
+      p = subprocess.Popen(["host", "-T", "A", line],
+                           stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE,
+                           close_fds=True)
+      p.stdin.close()
+      p.poll()
+      res = p.stdout.read()
+      if (res == None) or (res == ""):
+        outfh.write(line + "\n")
+      else:
+        outfh.write("// " + line + " has A record.")
 
 infh.close()
 outfh.close()
