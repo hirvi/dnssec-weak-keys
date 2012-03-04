@@ -19,20 +19,23 @@ for line in infh:
     if line.startswith("*") or line.startswith("/") or (not "." in line):
       continue
     else:
-      if line.startswith("!"):
-        line = line.lstrip("!")
+      line = line.lstrip("!")
       line = line.strip()
-
-      p = subprocess.Popen(["host", "-T", "A", line],
+      #print "Querying " + line
+      p = subprocess.Popen(["host", "-t", "A", line],
                            stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE,
                            close_fds=True)
       p.stdin.close()
       p.poll()
       res = p.stdout.read()
-      if (res == None) or (res == ""):
+      # print res
+      #print "address" in res
+      if not ( "address" in res ):
+        print line + " has NO A record."
         outfh.write(line + "\n")
       else:
-        outfh.write("// " + line + " has A record.")
+        print "// " + line + " has A record."
+        outfh.write("// " + line + " has A record.\n")
 
 infh.close()
 outfh.close()
