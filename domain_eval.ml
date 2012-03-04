@@ -1,3 +1,4 @@
+(* TODO: use the suffix list *)
 let domain_string = read_line ();;
 
 let split_on_dot s = Str.split (Str.regexp_string ".") s;;
