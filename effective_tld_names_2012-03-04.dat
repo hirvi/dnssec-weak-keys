@@ -358,14 +358,22 @@ net.ba
 edu.ba
 gov.ba
 mil.ba
-unsa.ba
-unbi.ba
+// *unsa.ba
+// *unbi.ba
 co.ba
 com.ba
 rs.ba
+// WP adds:
++web.ba
+// *untz.ba
+// *unmo.ba
+// *unze.ba
 
 // bb : http://en.wikipedia.org/wiki/.bb
 bb
+//WP adds:
++co.bb
++tv.bb
 biz.bb
 com.bb
 edu.bb
@@ -376,16 +384,25 @@ org.bb
 store.bb
 
 // bd : http://en.wikipedia.org/wiki/.bd
-*.bd
+// WP says this is not true:
+// *.bd
+com.bd
+edu.bd
+ac.bd
+net.bd
+gov.bd
+org.bd
+mil.bd
+
 
 // be : http://en.wikipedia.org/wiki/.be
 // Confirmed by registry <tech@dns.be> 2008-06-08
 be
-ac.be
++ac.be
 
 // bf : http://en.wikipedia.org/wiki/.bf
 bf
-gov.bf
++gov.bf
 
 // bg : http://en.wikipedia.org/wiki/.bg
 // https://www.register.bg/user/static/rules/en/index.html
@@ -430,7 +447,10 @@ z.bg
 // bh : http://en.wikipedia.org/wiki/.bh
 bh
 com.bh
++info.bh
++cc.bh
 edu.bh
++biz.bh
 net.bh
 org.bh
 gov.bh
