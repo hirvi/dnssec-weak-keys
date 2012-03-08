@@ -461,6 +461,8 @@ bi
 co.bi
 com.bi
 edu.bi
++gov.bi
++info.bi
 or.bi
 org.bi
 
@@ -468,10 +470,15 @@ org.bi
 biz
 
 // bj : http://en.wikipedia.org/wiki/.bj
+// WP makes this hard to tell:
 bj
 asso.bj
 barreau.bj
 gouv.bj
++mil.bj
++edu.bj
++gov.bj
++com.bj
 
 // bm : http://www.bermudanic.bm/dnr-text.txt
 bm
@@ -482,7 +489,13 @@ net.bm
 org.bm
 
 // bn : http://en.wikipedia.org/wiki/.bn
-*.bn
+// WP disagrees:
+// *.bn
++com.bn
++edu.bn
++gov.bn
++net.bn
++org.bn
 
 // bo : http://www.nic.bo/
 bo
@@ -510,6 +523,7 @@ b.br
 bio.br
 blog.br
 bmd.br
+// Not in official list:
 can.br
 cim.br
 cng.br
@@ -537,6 +551,7 @@ ind.br
 inf.br
 jor.br
 jus.br
++leg.br
 lel.br
 mat.br
 med.br
@@ -575,6 +590,7 @@ net.bs
 org.bs
 edu.bs
 gov.bs
++we.bs
 
 // bt : http://en.wikipedia.org/wiki/.bt
 bt
@@ -592,6 +608,8 @@ org.bt
 // list of other 2nd level tlds ?
 bw
 co.bw
++net.bw
++ac.bw
 org.bw
 
 // by : http://en.wikipedia.org/wiki/.by
@@ -606,7 +624,7 @@ mil.by
 com.by
 
 // http://hoster.by/
-of.by
+// of.by
 
 // bz : http://en.wikipedia.org/wiki/.bz
 // http://www.belizenic.bz/
@@ -616,7 +634,7 @@ net.bz
 org.bz
 edu.bz
 gov.bz
-
+// TODO: CONTINUE HERE
 // ca : http://en.wikipedia.org/wiki/.ca
 ca
 // ca geographical names
