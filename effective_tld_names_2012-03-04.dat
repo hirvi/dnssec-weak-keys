@@ -1214,6 +1214,11 @@ gs
 // gu : http://gadao.gov.gu/registration.txt
 // WP says only 3LD regs:
 // *.gu
++com.gu
++net.gu
++gov.gu
++org.gu
++edu.gu
 
 // gw : http://en.wikipedia.org/wiki/.gw
 gw
@@ -1342,10 +1347,20 @@ web.id
 
 // ie : http://en.wikipedia.org/wiki/.ie
 ie
-gov.ie
+// This is a host:
+// gov.ie
 
 // il : http://en.wikipedia.org/wiki/.il
-*.il
+// WP says there are sub-domains:
+// *.il
++ac.il
++co.il
++org.il
++net.il
++k12.il
++gov.il
++muni.il
++idf.il
 
 // im : https://www.nic.im/pdfs/imfaqs.pdf
 im
@@ -1357,6 +1372,7 @@ gov.im
 org.im
 nic.im
 ac.im
++com.im
 
 // in : http://en.wikipedia.org/wiki/.in
 // see also: http://www.inregistry.in/policies/
@@ -1428,6 +1444,9 @@ int.is
 it
 gov.it
 edu.it
++comune.it
++provincia.it
++regione.it
 // list of reserved geo-names : 
 // http://www.nic.it/documenti/regolamenti-e-linee-guida/regolamento-assegnazione-versione-6.0.pdf
 // (There is also a list of reserved geo-names corresponding to Italian 
@@ -1718,7 +1737,14 @@ sch.je
 gov.je
 
 // jm : http://www.com.jm/register.html
-*.jm
+// WP says there are sub-domains:
+// *.jm
++com.jm
++net.jm
++org.jm
++edu.jm
++gov.jm
++mil.jm
 
 // jo : http://www.dns.jo/Registration_policy.aspx
 jo
@@ -1751,126 +1777,136 @@ ne.jp
 or.jp
 // jp geographic type names
 // http://jprs.jp/doc/rule/saisoku-1.html
-*.aichi.jp
-*.akita.jp
-*.aomori.jp
-*.chiba.jp
-*.ehime.jp
-*.fukui.jp
-*.fukuoka.jp
-*.fukushima.jp
-*.gifu.jp
-*.gunma.jp
-*.hiroshima.jp
-*.hokkaido.jp
-*.hyogo.jp
-*.ibaraki.jp
-*.ishikawa.jp
-*.iwate.jp
-*.kagawa.jp
-*.kagoshima.jp
-*.kanagawa.jp
-*.kawasaki.jp
-*.kitakyushu.jp
-*.kobe.jp
-*.kochi.jp
-*.kumamoto.jp
-*.kyoto.jp
-*.mie.jp
-*.miyagi.jp
-*.miyazaki.jp
-*.nagano.jp
-*.nagasaki.jp
-*.nagoya.jp
-*.nara.jp
-*.niigata.jp
-*.oita.jp
-*.okayama.jp
-*.okinawa.jp
-*.osaka.jp
-*.saga.jp
-*.saitama.jp
-*.sapporo.jp
-*.sendai.jp
-*.shiga.jp
-*.shimane.jp
-*.shizuoka.jp
-*.tochigi.jp
-*.tokushima.jp
-*.tokyo.jp
-*.tottori.jp
-*.toyama.jp
-*.wakayama.jp
-*.yamagata.jp
-*.yamaguchi.jp
-*.yamanashi.jp
-*.yokohama.jp
-!metro.tokyo.jp
-!pref.aichi.jp
-!pref.akita.jp
-!pref.aomori.jp
-!pref.chiba.jp
-!pref.ehime.jp
-!pref.fukui.jp
-!pref.fukuoka.jp
-!pref.fukushima.jp
-!pref.gifu.jp
-!pref.gunma.jp
-!pref.hiroshima.jp
-!pref.hokkaido.jp
-!pref.hyogo.jp
-!pref.ibaraki.jp
-!pref.ishikawa.jp
-!pref.iwate.jp
-!pref.kagawa.jp
-!pref.kagoshima.jp
-!pref.kanagawa.jp
-!pref.kochi.jp
-!pref.kumamoto.jp
-!pref.kyoto.jp
-!pref.mie.jp
-!pref.miyagi.jp
-!pref.miyazaki.jp
-!pref.nagano.jp
-!pref.nagasaki.jp
-!pref.nara.jp
-!pref.niigata.jp
-!pref.oita.jp
-!pref.okayama.jp
-!pref.okinawa.jp
-!pref.osaka.jp
-!pref.saga.jp
-!pref.saitama.jp
-!pref.shiga.jp
-!pref.shimane.jp
-!pref.shizuoka.jp
-!pref.tochigi.jp
-!pref.tokushima.jp
-!pref.tottori.jp
-!pref.toyama.jp
-!pref.wakayama.jp
-!pref.yamagata.jp
-!pref.yamaguchi.jp
-!pref.yamanashi.jp
-!city.chiba.jp
-!city.fukuoka.jp
-!city.hiroshima.jp
-!city.kawasaki.jp
-!city.kitakyushu.jp
-!city.kobe.jp
-!city.kyoto.jp
-!city.nagoya.jp
-!city.niigata.jp
-!city.okayama.jp
-!city.osaka.jp
-!city.saitama.jp
-!city.sapporo.jp
-!city.sendai.jp
-!city.shizuoka.jp
-!city.yokohama.jp
+aichi.jp
+akita.jp
+aomori.jp
+chiba.jp
+ehime.jp
+fukui.jp
+fukuoka.jp
+fukushima.jp
+gifu.jp
+gunma.jp
+hiroshima.jp
+hokkaido.jp
+hyogo.jp
+ibaraki.jp
+ishikawa.jp
+iwate.jp
+kagawa.jp
+kagoshima.jp
+kanagawa.jp
+kawasaki.jp
+kitakyushu.jp
+kobe.jp
+kochi.jp
+kumamoto.jp
+kyoto.jp
+mie.jp
+miyagi.jp
+miyazaki.jp
+nagano.jp
+nagasaki.jp
+nagoya.jp
+nara.jp
+niigata.jp
+oita.jp
+okayama.jp
+okinawa.jp
+osaka.jp
+saga.jp
+saitama.jp
+sapporo.jp
+sendai.jp
+shiga.jp
+shimane.jp
+shizuoka.jp
+tochigi.jp
+tokushima.jp
+tokyo.jp
+tottori.jp
+toyama.jp
+wakayama.jp
+yamagata.jp
+yamaguchi.jp
+yamanashi.jp
+yokohama.jp
+metro.tokyo.jp
+pref.aichi.jp
+pref.akita.jp
+pref.aomori.jp
+pref.chiba.jp
+pref.ehime.jp
+pref.fukui.jp
+pref.fukuoka.jp
+pref.fukushima.jp
+pref.gifu.jp
+pref.gunma.jp
+pref.hiroshima.jp
+pref.hokkaido.jp
+pref.hyogo.jp
+pref.ibaraki.jp
+pref.ishikawa.jp
+pref.iwate.jp
+pref.kagawa.jp
+pref.kagoshima.jp
+pref.kanagawa.jp
+pref.kochi.jp
+pref.kumamoto.jp
+pref.kyoto.jp
+pref.mie.jp
+pref.miyagi.jp
+pref.miyazaki.jp
+pref.nagano.jp
+pref.nagasaki.jp
+pref.nara.jp
+pref.niigata.jp
+pref.oita.jp
+pref.okayama.jp
+pref.okinawa.jp
+pref.osaka.jp
+pref.saga.jp
+pref.saitama.jp
+pref.shiga.jp
+pref.shimane.jp
+pref.shizuoka.jp
+pref.tochigi.jp
+pref.tokushima.jp
+pref.tottori.jp
+pref.toyama.jp
+pref.wakayama.jp
+pref.yamagata.jp
+pref.yamaguchi.jp
+pref.yamanashi.jp
+city.chiba.jp
+city.fukuoka.jp
+city.hiroshima.jp
+city.kawasaki.jp
+city.kitakyushu.jp
+city.kobe.jp
+city.kyoto.jp
+city.nagoya.jp
+city.niigata.jp
+city.okayama.jp
+city.osaka.jp
+city.saitama.jp
+city.sapporo.jp
+city.sendai.jp
+city.shizuoka.jp
+city.yokohama.jp
 
 // ke : http://www.kenic.or.ke/index.php?option=com_content&task=view&id=117&Itemid=145
-*.ke
+// WP says sub-domains exist:
+// *.ke
++co.ke
++or.ke
++ne.ke
++go.ke
++ac.ke
++sc.ke
++me.ke
++mobi.ke
++info.ke
 
 // kg : http://www.domain.kg/dmn_n.html
 kg
@@ -1882,7 +1918,16 @@ gov.kg
 mil.kg
 
 // kh : http://www.mptc.gov.kh/dns_registration.htm
-*.kh
+// *.kh
+// WP says sub-domains exist:
++per.kh
++com.kh
++edu.kh
++gov.kh
++mil.kh
++net.kh
++org.kh
+
 
 // ki : http://www.ki/dns/index.html
 ki
@@ -1893,6 +1938,8 @@ org.ki
 gov.ki
 info.ki
 com.ki
++mob.ki
++tel.ki
 
 // km : http://en.wikipedia.org/wiki/.km
 // http://www.domaine.km/documents/charte.doc
@@ -1966,9 +2013,17 @@ jeonbuk.kr
 jeonnam.kr
 seoul.kr
 ulsan.kr
+한글.kr
+한국.kr
 
 // kw : http://en.wikipedia.org/wiki/.kw
-*.kw
+// WP says there are sub-domains
+// *.kw
++edu.kw
++com.kw
++net.kw
++org.kw
++gov.kw
 
 // ky : http://www.icta.ky/da_ky_reg_dom.php
 // Confirmed by registry <kysupport@perimeterusa.com> 2008-06-17
@@ -2001,7 +2056,8 @@ per.la
 com.la
 org.la
 // see http://www.c.la/
-c.la
+// private:
+// c.la
 
 // lb : http://en.wikipedia.org/wiki/.lb
 // Submitted by registry <randy@psg.com> 2008-06-17
