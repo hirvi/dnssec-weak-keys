@@ -4308,6 +4308,7 @@ edu.sc
 
 // sd : http://www.isoc.sd/sudanic.isoc.sd/billing_pricing.htm
 // Submitted by registry <admin@isoc.sd> 2008-06-17
+// Server out of service; using https://en.wikipedia.org/wiki/.sd
 sd
 com.sd
 net.sd
@@ -4316,9 +4317,11 @@ edu.sd
 med.sd
 gov.sd
 info.sd
++tv.sd
 
 // se : http://en.wikipedia.org/wiki/.se
 // Submitted by registry <Patrik.Wallstrom@iis.se> 2008-06-24
+// + https://www.iis.se/statistics/barred_domains_list.txt ("Blocked, Second level domains" or "Blocked, Sub-domains")
 se
 a.se
 ac.se
@@ -4340,6 +4343,7 @@ komforb.se
 kommunalforbund.se
 komvux.se
 l.se
++lanarb.se
 lanbib.se
 m.se
 n.se
@@ -4362,6 +4366,7 @@ y.se
 z.se
 
 // sg : http://www.nic.net.sg/sub_policies_agreement/2ld.html
+// +Link moved to http://www.nic.net.sg/page/registration-policies-procedures-and-guidelines
 sg
 com.sg
 net.sg
@@ -4373,6 +4378,11 @@ per.sg
 // sh : http://www.nic.sh/rules.html
 // list of 2nd level domains ?
 sh
+//+GUESSED:
++co.sh
++gov.sh
++nom.sh
+
 
 // si : http://en.wikipedia.org/wiki/.si
 si
@@ -4394,6 +4404,7 @@ gov.sl
 org.sl
 
 // sm : http://en.wikipedia.org/wiki/.sm
+// + http://www.nic.sm/index.php?pag=home&lang=EN
 sm
 
 // sn : http://en.wikipedia.org/wiki/.sn
@@ -4433,8 +4444,14 @@ store.st
 // su : http://en.wikipedia.org/wiki/.su
 su
 
-// sv : http://www.svnet.org.sv/svpolicy.html
-*.sv
+// -sv : http://www.svnet.org.sv/svpolicy.html
+// +sv : http://www.svnet.org.sv/
+// +NOTE: Originally, there was *.sv here:
++com.sv
++edu.sv
++gob.sv
++org.sv
++red.sv
 
 // sy : http://en.wikipedia.org/wiki/.sy
 // see also: http://www.gobin.info/domainname/sy.doc
@@ -4445,6 +4462,7 @@ net.sy
 mil.sy
 com.sy
 org.sy
++news.sy
 
 // sz : http://en.wikipedia.org/wiki/.sz
 // http://www.sispa.org.sz/
@@ -4459,6 +4477,7 @@ tc
 // td : http://en.wikipedia.org/wiki/.td
 td
 
+
 // tel: http://en.wikipedia.org/wiki/.tel
 // http://www.telnic.org/
 tel
@@ -4467,8 +4486,9 @@ tel
 tf
 
 // tg : http://en.wikipedia.org/wiki/.tg
-// http://www.nic.tg/nictg/index.php implies no reserved 2nd-level domains,
-// although this contradicts wikipedia.
+// + http://www.nic.tg/nictg/index.php does not imply any reserved 2nd-level domains,
+// + although this contradicts Wikipedia's information that 2nd-level registries
+// + are in effect.
 tg
 
 // th : http://en.wikipedia.org/wiki/.th
@@ -4483,20 +4503,30 @@ net.th
 or.th
 
 // tj : http://www.nic.tj/policy.htm
+// + NOTE: Wikipedia lists the following 2nd-level domains,
+// + however, nic.tj themselves now give away 2nd level domains.
 tj
 ac.tj
++aero.tj
 biz.tj
 co.tj
 com.tj
++coop.tj
+dyn.tj
 edu.tj
 go.tj
 gov.tj
++info.tj
 int.tj
 mil.tj
++museum.tj
++my.tj
 name.tj
 net.tj
 nic.tj
 org.tj
++per.tj
++pro.tj
 test.tj
 web.tj
 
@@ -4510,9 +4540,13 @@ gov.tl
 // tm : http://www.nic.tm/rules.html
 // list of 2nd level tlds ?
 tm
+// GUESSED from above rules.html:
++com.tm
++org.tm
 
 // tn : http://en.wikipedia.org/wiki/.tn
 // http://whois.ati.tn/
+// +http://www.registre.tn/en/index.php?rub=263&srub=356
 tn
 com.tn
 ens.tn
@@ -4546,8 +4580,31 @@ edu.to
 mil.to
 
 // tr : http://en.wikipedia.org/wiki/.tr
-*.tr
++tr
 !nic.tr
++!tsk.tr
+// +https://www.nic.tr/index.php?lang=TR_LANG
++av.tr
++bel.tr
++biz.tr
++bbs.tr
++com.tr
++dr.tr
++edu.tr
++gen.tr
++gov.tr
++info.tr
++k12.tr
++name.tr
++net.tr
++org.tr
++pol.tr
++tel.tr
++ts.tr
++tsk.tr
++tv.tr
++web.tr
+
 // Used by government in the TRNC
 // http://en.wikipedia.org/wiki/.nc.tr
 gov.nc.tr
@@ -4655,6 +4712,7 @@ sebastopol.ua
 sumy.ua
 te.ua
 ternopil.ua
++uz.ua
 uzhgorod.ua
 vinnica.ua
 vn.ua
@@ -4670,25 +4728,27 @@ pp.ua
 // ug : http://www.registry.co.ug/
 ug
 co.ug
++com.ug
 ac.ug
 sc.ug
 go.ug
 ne.ug
 or.ug
++org.ug
 
 // uk : http://en.wikipedia.org/wiki/.uk
 *.uk
 *.sch.uk
 !bl.uk
 !british-library.uk
-!icnet.uk
+//+deleted: !icnet.uk
 !jet.uk
 !mod.uk
-!nel.uk
+//+deleted: !nel.uk
 !nhs.uk
 !nic.uk
 !nls.uk
-!national-library-scotland.uk
+//+deleted: !national-library-scotland.uk
 !parliament.uk
 !police.uk
 
@@ -4938,13 +4998,22 @@ chtr.k12.ma.us
 paroch.k12.ma.us
 
 // uy : http://www.antel.com.uy/
+// https://en.wikipedia.org/wiki/.uy
 *.uy
++com.uy
++edu.uy
++gub.uy
++net.uy
++mil.uy
++org.uy
 
-// uz : http://www.reg.uz/registerr.html
+//+ uz : http://www.reg.uz/
 // are there other 2nd level tlds ?
 uz
 com.uz
 co.uz
++net.uz
++org.uz
 
 // va : http://en.wikipedia.org/wiki/.va
 va
@@ -4961,6 +5030,16 @@ edu.vc
 
 // ve : http://registro.nic.ve/nicve/registro/index.html
 *.ve
++com.ve
++net.ve
++org.ve
++info.ve
++co.ve
++web.ve
++gob.ve
++edu.ve
++mil.ve
++tec.ve
 
 // vg : http://en.wikipedia.org/wiki/.vg
 vg
@@ -5168,16 +5247,74 @@ edu.ws
 xxx
 
 // ye : http://www.y.net.ye/services/domain_name.htm
+// + https://en.wikipedia.org/wiki/.ye
 *.ye
++com.ye
++co.ye
++ltd.ye
++me.yene
++net.ye
++org.ye
++plc.ye
++gov.ye
 
 // za : http://www.zadna.org.za/slds.html
+// +https://en.wikipedia.org/wiki/.za
 *.za
++ac.za
++city.za
++co.za
++edu.za
++gov.za
++law.za
++mil.za
++nom.za
++org.za
++school.za
++escape.school.za
++fs.school.za
++gp.school.za
++kzn.school.za
++mpm.school.za
++mpm.za
++ncape.school.za
++lp.school.za
++nw.school.za
++wcape.school.za
++alt.za
++net.work.za
++ngo.za
++tm.za
++web.za
++bourse.za
++agric.za
++cybernet.za
++grondar.za
++iaccess.za
++inca.za
++nis.za
++olivetti.za
++pix.za
++db.za
++imt.za
 
 // zm : http://en.wikipedia.org/wiki/.zm
 *.zm
++ac.zm
++co.zm
++com.zm
++edu.zm
++gov.zm
++net.zm
++sch.zm
++boz.zm
++zamnet.zm
 
 // zw : http://en.wikipedia.org/wiki/.zw
 *.zw
++co.zw
++ac.zw
++org.zw
 
 // DynDNS.com Dynamic DNS zones : http://www.dyndns.com/services/dns/dyndns/
 dyndns-at-home.com
