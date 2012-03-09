@@ -634,7 +634,7 @@ net.bz
 org.bz
 edu.bz
 gov.bz
-// TODO: CONTINUE HERE
+
 // ca : http://en.wikipedia.org/wiki/.ca
 ca
 // ca geographical names
@@ -654,10 +654,12 @@ sk.ca
 yk.ca
 // gc.ca: http://en.wikipedia.org/wiki/.gc.ca
 // see also: http://registry.gc.ca/en/SubdomainFAQ
-gc.ca
+// This is a commercial entity:
+// gc.ca
 
 // co.ca: http://registry.co.ca
-co.ca
+// This is a commercial entity:
+// co.ca
 
 // cat : http://en.wikipedia.org/wiki/.cat
 cat
@@ -669,6 +671,9 @@ cc
 // see also: https://www.nic.cd/domain/insertDomain_2.jsp?act=1
 cd
 gov.cd
+// WP is not helpful here, but com.cd probably is protected
+com.cd
+
 
 // cf : http://en.wikipedia.org/wiki/.cf
 cf
@@ -695,15 +700,26 @@ asso.ci
 aéroport.ci
 int.ci
 presse.ci
+// WP does not mention these, but hey:
 md.ci
 gouv.ci
 
 // ck : http://en.wikipedia.org/wiki/.ck
-*.ck
-!www.ck
+// *.ck
+// !www.ck
+// WP says there are only 3LD regs:
++co.ck
++org.ck
++edu.ck
++gov.ck
++net.ck
++gen.ck
++biz.ck
++info.ck
 
 // cl : http://en.wikipedia.org/wiki/.cl
 cl
+// No idea where these come from, they are not in WP:
 gov.cl
 gob.cl
 co.cl
@@ -785,31 +801,32 @@ com
 // CentralNic names : http://www.centralnic.com/names/domains
 // Confirmed by registry <gavin.brown@centralnic.com> 2008-06-09
 // Updated by registry <gavin.brown@centralnic.com> 2011-05-27
-ar.com
-br.com
-cn.com
-de.com
-eu.com
-gb.com
-gr.com
-hu.com
-jpn.com
-kr.com
-no.com
-qc.com
-ru.com
-sa.com
-se.com
-uk.com
-us.com
-uy.com
-za.com
+// these are all private
+// ar.com
+// br.com
+// cn.com
+// de.com
+// eu.com
+// gb.com
+// gr.com
+// hu.com
+// jpn.com
+// kr.com
+// no.com
+// qc.com
+// ru.com
+// sa.com
+// se.com
+// uk.com
+// us.com
+// uy.com
+// za.com
 
 // Requested by Yngve Pettersen <yngve@opera.com> 2009-11-26
-operaunite.com
+// operaunite.com
 
 // Requested by Eduardo Vela <evn@google.com> 2010-09-06
-appspot.com
+// appspot.com
 
 // coop : http://en.wikipedia.org/wiki/.coop
 coop
@@ -835,6 +852,15 @@ inf.cu
 
 // cv : http://en.wikipedia.org/wiki/.cv
 cv
+// WP disagrees:
++net.cv
++gov.cv
++org.cv
++edu.cv
++int.cv
++publ.cv
++com.cv
++nome.cv
 
 // cx : http://en.wikipedia.org/wiki/.cx
 // list of other 2nd level tlds ?
@@ -842,7 +868,22 @@ cx
 gov.cx
 
 // cy : http://en.wikipedia.org/wiki/.cy
-*.cy
+//*.cy
+// Once again, WP disgrees:
+// and what about edu.cy?
++ac.cy
++net.cy
++gov.cy
++org.cy
++pro.cy
++name.cy
++ekloges.cy
++tm.cy
++ltd.cy
++biz.cy
++press.cy
++parliament.cy
++com.cy
 
 // cz : http://en.wikipedia.org/wiki/.cz
 cz
@@ -854,7 +895,8 @@ de
 
 // CentralNic names : http://www.centralnic.com/names/domains
 // Submitted by registry <gavin.brown@centralnic.com> 2011-05-27
-com.de
+// This is a private one:
+// com.de
 
 // dj : http://en.wikipedia.org/wiki/.dj
 dj
@@ -933,14 +975,24 @@ com.eg
 edu.eg
 eun.eg
 gov.eg
++info.eg
 mil.eg
 name.eg
 net.eg
 org.eg
 sci.eg
++tv.eg
 
 // er : http://en.wikipedia.org/wiki/.er
-*.er
+// WP disagrees
+// *.er
++com.er
++edu.er
++gov.er
++mil.er
++net.er
++org.er
++ind.er
 
 // es : https://www.nic.es/site_ingles/ingles/dominios/index.html
 es
@@ -951,7 +1003,16 @@ gob.es
 edu.es
 
 // et : http://en.wikipedia.org/wiki/.et
-*.et
+// WP Disagrees
+// *.et
++com.et
++gov.et
++org.et
++edu.et
++net.et
++biz.et
++name.et
++info.et
 
 // eu : http://en.wikipedia.org/wiki/.eu
 eu
@@ -968,10 +1029,27 @@ aland.fi
 iki.fi
 
 // fj : http://en.wikipedia.org/wiki/.fj
-*.fj
+// WP disagrees
+// *.fj
++ac.fj
++biz.fj
++com.fj
++info.fj
++mil.fj
++name.fj
++net.fj
++org.fj
++pro.fj
 
 // fk : http://en.wikipedia.org/wiki/.fk
-*.fk
+// WP disagrees:
+// *.fk
++co.fk
++org.fk
++gov.fk
++ac.fk
++nom.fk
++net.fk
 
 // fm : http://en.wikipedia.org/wiki/.fm
 fm
@@ -1008,10 +1086,27 @@ port.fr
 veterinaire.fr
 
 // ga : http://en.wikipedia.org/wiki/.ga
+// WP disagrees:
 ga
++md.ga
++presse.ga
++go.ga
++gouv.ga
++org.ga
++or.ga
++com.ga
++co.ga
++edu.ga
++ed.ga
++ac.ga
++net.ga
++aéroport.ga
++int.ga
 
 // gb : This registry is effectively dormant
 // Submitted by registry <Damien.Shaw@ja.net> 2008-06-12
+// One SLD remains:
++hmg.gb
 
 // gd : http://en.wikipedia.org/wiki/.gd
 gd
@@ -1090,32 +1185,49 @@ gq
 
 // gr : https://grweb.ics.forth.gr/english/1617-B-2005.html
 // Submitted by registry <segred@ics.forth.gr> 2008-06-09
+// WP knows more:
 gr
 com.gr
 edu.gr
 net.gr
 org.gr
 gov.gr
++mil.gr
++mod.gr
++sch.gr
 
 // gs : http://en.wikipedia.org/wiki/.gs
 gs
 
 // gt : http://www.gt/politicas.html
-*.gt
-!www.gt
+// WP says sub-domains exist, and so does the above link:
+// *.gt
+// !www.gt
++com.gt
++edu.gt
++net.gt
++gob.gt
++org.gt
++mil.gt
++ind.gt
 
 // gu : http://gadao.gov.gu/registration.txt
-*.gu
+// WP says only 3LD regs:
+// *.gu
 
 // gw : http://en.wikipedia.org/wiki/.gw
 gw
 
 // gy : http://en.wikipedia.org/wiki/.gy
 // http://registry.gy/
+// WP knows more:
 gy
 co.gy
 com.gy
 net.gy
++org.gy
++edu.gy
++gov.gy
 
 // hk : https://www.hkdnr.hk
 // Submitted by registry <hk.tech@hkirc.hk> 2008-06-11
